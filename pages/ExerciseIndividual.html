@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Exercises Sprint2 Eventos</title>
+</head>
+
+<body class="flex flex-col gap-5">
+    <header class="flex flex-wrap items-center justify-around bg-black text-white w-full h-40">
+        <h1 class="text-center text-bold text-4xl">EXERCISES SPRINT2 | INDIVIDUAL</h1>
+        <nav>
+            <a class="text-bold hover:underline decoration-white hover:text-orange-500 text-white text-2xl" href="../index.html">HOME</a>
+            <a class="hover:underline decoration-white text-orange-500 text-bold text-2xl" href="#">INDIVIDUAL</a>
+            <a class="text-bold hover:underline decoration-white hover:text-orange-500 text-white text-2xl" href="/pages/ExerciseGrupal.html">GRAFFITI</a>
+        </nav>
+    </header>
+    <main>
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl">Exercise 1</h2>
+            <div
+                class="w-80 h-80 shadow-black shadow-lg border border-black flex flex-col justify-center items-center mt-2">
+                <div class="w-52 h-52 bg-slate-400 rounded-lg" id="divChangeColor">
+                    <p id="colorName" class="text-lg font-bold mb-4">Gris</p>
+                </div>
+                <button
+                    class="border border-black shadow-black shadow-lg mt-6 w-28 bg-yellow-400 p-1 text-2xl font-semibold"
+                    id="buttonChange">Change</button>
+            </div>
+        </div>
+        <div class="flex flex-col items-center mt-5">
+            <h2 class="text-2xl">Exercise 2</h2>
+            <div
+                class="w-80 h-80 shadow-black shadow-lg border border-black flex flex-col justify-center items-center mt-2">
+                <div class="w-52 h-52 bg-slate-400 rounded-lg" id="divTextReset"></div>
+            </div>
+            <form class="pt-4" action="">
+                <div>
+                    <label for="text"></label>
+                    <input class="border border-black w-80 h-10" type="text" name="text" id="text">
+                </div>
+                <div class="flex justify-center">
+                    <button
+                        class="border border-black shadow-black shadow-lg w-28 bg-yellow-400 p-1 mt-8 text-2xl font-semibold"
+                        id="reset" type="submit">Reset</button>
+                </div>
+            </form>
+        </div>
+        <article class="mt-5">
+            <h2 class="text-2xl text-center">Exercise 3</h2>
+            <div class="flex justify-center gap-5 mt-2">
+                <div
+                    class="w-72 h-80 shadow-black shadow-lg border border-black flex flex-col justify-around items-center">
+                    <form class="flex flex-col items-center" action="">
+                        <legend class="text-xl">Heigth</legend>
+                        <label for="heigth">In centimetres</label>
+                        <input class="border border-black w-60 h-10" type="text" name="Heigth" id="heigth">
+                    </form>
+                    <form class="flex flex-col items-center" action="">
+                        <legend class="text-xl">Weight</legend>
+                        <label for="weight">In kilograms</label>
+                        <input class="border border-black w-60 h-10" type="text" name="Weight" id="weight">
+                    </form>
+                    <button
+                        class="border border-black shadow-black shadow-lg w-28 bg-yellow-400 p-1 text-2xl font-semibold"
+                        id="buttonCalculate">Calculate</button>
+                </div>
+                <div
+                    class="w-72 h-80 shadow-black shadow-lg border border-black flex flex-col justify-center items-center">
+                    <form class="flex flex-col items-center" action="">
+                        <legend class="text-xl">Result</legend>
+                        <label for="result">Your body mass index is:</label>
+                        <input class="border border-black w-60 h-10" type="text" name="result" id="result">
+                </form>
+            </div>
+        </div>
+    </article>
+    <article class=" mt-5">
+                        <h2 class="text-center text-2xl">Exercise 4</h2>
+                        <div class="flex justify-center gap-5 mt-2 mb-5">
+                            <div
+                                class=" w-72 h-80 shadow-black shadow-lg border border-black flex flex-col justify-around items-center">
+                                <form class="flex flex-col items-center justify-around" action="">
+                                    <legend class="text-xl">Local Currency</legend>
+                                    <label for="local">No commas or periods</label>
+                                    <input class="border border-black w-60 h-10" type="text" name="local"
+                                        id="local" value="500">
+
+                                    <legend class="text-xl">Dollars</legend>
+                                    <label for="dollars">No commas or periods</label>
+                                    <input class="border border-black w-60 h-10" type="text" name="dollars"
+                                        id="dollars" value="1.00">
+                                </form>
+                            </div>
+
+                            <div
+                                class=" w-72 h-80 shadow-black shadow-lg border border-black flex flex-col justify-around items-center">
+                                <form class="flex flex-col items-center justify-around" action="">
+                                    <legend class="text-xl">Enter an amount in local currency to convert to dollars:</legend>
+                                    <label for="localCurrency">No commas or periods</label>
+                                    <input class="border border-black w-60 h-10" type="text" name="localCurrency" id="localCurrency">
+
+                                    <legend class="text-xl">Dollars</legend>
+                                    <label for="resultDollars">Result</label>
+                                    <input class="border border-black w-60 h-10" type="text" name="dollars"
+                                        id="resultDollars">
+                                </form>
+                                <div>
+                                    <button
+                                        class="border border-black shadow-black shadow-lg w-28 bg-yellow-400 p-1 text-2xl font-semibold"
+                                        id="buttonConvert">Convert</button>
+                                    <button
+                                        class="border border-black shadow-black shadow-lg w-28 bg-yellow-400 p-1 text-2xl font-semibold"
+                                        id="buttonDelete">Delete</button>
+                                </div>
+                            </div>
+                            <div
+                                class=" w-72 h-80 shadow-black shadow-lg border border-black flex flex-col justify-around items-center">
+                                <form class="flex flex-col items-center justify-around" action="">
+                                    <legend class="text-xl">Enter an amount in dollars to convert to local currency: </legend>
+                                    <label for="dollar">No commas or periods</label>
+                                    <input class="border border-black w-60 h-10" type="text" name="dollar" id="dollar">
+
+                                    <legend class="text-xl">Local Currency</legend>
+                                    <label for="resultLocalCurrency">Result</label>
+                                    <input class="border border-black w-60 h-10" type="text" name="local" id="resultLocalCurrency">
+                                </form>
+                                <div>  
+                                    <button
+                                        class="border border-black shadow-black shadow-lg w-28 bg-yellow-400 p-1 text-2xl font-semibold"
+                                        id="convert">Convert</button>
+                                    <button
+                                        class="border border-black shadow-black shadow-lg w-28 bg-yellow-400 p-1 text-2xl font-semibold"
+                                        id="delete">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+        </article>
+    </main>
+    <script src="../ExerciseIndividual.js"></script>
+</body>
+
+</html>
